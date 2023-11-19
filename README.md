@@ -33,7 +33,7 @@ To run this Kanban Dashboard locally, follow these steps:
    ```
    npm install
    
-##Usage
+## Usage
 To start the Kanban Dashboard application, run the following command:
 
   
@@ -41,7 +41,7 @@ To start the Kanban Dashboard application, run the following command:
 
 This will launch the application in your default web browser. Explore the features of the Kanban Dashboard and manage your tasks efficiently!
 
-##Contributing
+## Contributing
 If you'd like to contribute to this project, please follow these guidelines:
 
 1.Fork the repository.
@@ -49,7 +49,7 @@ If you'd like to contribute to this project, please follow these guidelines:
 3.Commit your changes: git commit -m 'Add some feature'.
 4.Push to the branch: git push origin feature-name.
 5.Submit a pull request.
-##License
+## License
 This project is licensed under the MIT License.
 
 Feel free to reach out if you have any questions or feedback. Thank you for considering my application!
