@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import TicketComponent from './components/TicketComponent';
-import './App.css';
+import './App.css'; //CODED BY BHAVAY GARG
 import Navbar from './components/Navbar';
 function App() {
   // Declare a variable to store the tickets array
@@ -13,7 +13,7 @@ function App() {
     localStorage.setItem('grouping', newGrouping);
   };
   
-  const handleSortingChange = (newSorting) => {
+  const handleSortingChange = (newSorting) => {//CODED BY BHAVAY GARG
     setSorting(newSorting);
     localStorage.setItem('sorting', newSorting);
   };
@@ -68,7 +68,7 @@ const groupTickets = (tickets) => {
       return grouped;
     }, {});
   }
-};
+};//CODED BY BHAVAY GARG
   
 
 
@@ -97,10 +97,10 @@ const groupTickets = (tickets) => {
   return (
     <div className="App">
     <div>
-      <Navbar className="navbar" onGroupingChange={handleGroupingChange} onOrderingChange={handleSortingChange} />
+      <Navbar className="navbar" onGroupingChange={handleGroupingChange} onOrderingChange={handleSortingChange} /> //CODED BY BHAVAY GARG
 
     </div>
-      {/* Render the sorting and grouping controls here */}
+      {/* Render the sorting and grouping controls here */}//CODED BY BHAVAY GARG
       <div className='dashboard'>
       {Object.keys(sortedAndGroupedTickets).map((groupKey) => (
         <div key={groupKey} className='divs'>
@@ -117,7 +117,7 @@ const groupTickets = (tickets) => {
 export default App;
 
 /*Priority Sorting:
-
+//CODED BY BHAVAY GARG
 If the selected sorting criteria is 'priority', the function uses b.priority - a.priority. This sorts the tickets in descending order of priority, with higher priority values coming first.
 Title Sorting:
 
