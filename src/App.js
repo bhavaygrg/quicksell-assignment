@@ -13,7 +13,7 @@ function App() {
     localStorage.setItem('grouping', newGrouping);
   };
   
-  const handleSortingChange = (newSorting) => {//CODED BY BHAVAY GARG
+  const handleSortingChange = (newSorting) => {
     setSorting(newSorting);
     localStorage.setItem('sorting', newSorting);
   };
@@ -97,10 +97,10 @@ const groupTickets = (tickets) => {
   return (
     <div className="App">
     <div>
-      <Navbar className="navbar" onGroupingChange={handleGroupingChange} onOrderingChange={handleSortingChange} /> //CODED BY BHAVAY GARG
+      <Navbar className="navbar" onGroupingChange={handleGroupingChange} onOrderingChange={handleSortingChange} /> 
 
     </div>
-      {/* Render the sorting and grouping controls here */}//CODED BY BHAVAY GARG
+      {/* Render the sorting and grouping controls here */}
       <div className='dashboard'>
       {Object.keys(sortedAndGroupedTickets).map((groupKey) => (
         <div key={groupKey} className='divs'>
