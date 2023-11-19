@@ -11,7 +11,7 @@ const Navbar = ({ onGroupingChange, onOrderingChange }) => {
   };
 
   const handleGroupingChange = (event) => {
-    const newGrouping = event.target.value;
+    const newGrouping = event.target.value; //CODED BY BHAVAY GARG
     setGrouping(newGrouping);
     onGroupingChange(newGrouping);
   };
@@ -57,3 +57,4 @@ const Navbar = ({ onGroupingChange, onOrderingChange }) => {
 };
 
 export default Navbar;
+//CODED BY BHAVAY GARG
