@@ -73,15 +73,15 @@ function App() {
   const getPriorityLabel = (priority) => {
     switch (priority) {
       case 4:
-        return 'Urgent (Priority level 4)';
+        return 'Urgent';
       case 3:
-        return 'High (Priority level 3)';
+        return 'High';
       case 2:
-        return 'Medium (Priority level 2)';
+        return 'Medium';
       case 1:
-        return 'Low (Priority level 1)';
+        return 'Low';
       case 0:
-        return 'No priority (Priority level 0)';
+        return 'No priority';
       default:
         return `Unknown Priority (${priority})`;
     }//CODED BY BHAVAY GARG
