@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import TicketComponent from './components/TicketComponent';
+import TicketComponent from './components/TicketComponent'; //CODED BY BHAVAY GARG
 import './App.css';
 import Navbar from './components/Navbar';
 
@@ -33,7 +33,7 @@ function App() {
         return b.priority - a.priority;
       } else if (sorting === 'title') {
         if (a.title && b.title) {
-          return a.title.localeCompare(b.title);
+          return a.title.localeCompare(b.title); //CODED BY BHAVAY GARG
         }
         return 0;
       }
@@ -59,7 +59,7 @@ function App() {
         const priorityLabel = getPriorityLabel(ticket.priority);
         grouped[priorityLabel] = [...(grouped[priorityLabel] || []), ticket];
         return grouped;
-      }, {});
+      }, {}); //CODED BY BHAVAY GARG
     }
   };
 
@@ -84,7 +84,7 @@ function App() {
         return 'No priority (Priority level 0)';
       default:
         return `Unknown Priority (${priority})`;
-    }
+    }//CODED BY BHAVAY GARG
   };
 
   const [usersArray, setUsersArray] = useState([]);
@@ -107,6 +107,7 @@ function App() {
   }, []);
 
   const sortedAndGroupedTickets = groupTickets(sortTickets(ticketsArray));
+  //CODED BY BHAVAY GARG
 
   return (
     <div className="App">
@@ -132,3 +133,12 @@ function App() {
 }
 
 export default App;
+
+/*Priority Sorting:
+//CODED BY BHAVAY GARG
+If the selected sorting criteria is 'priority', the function uses b.priority - a.priority. This sorts the tickets in descending order of priority, with higher priority values coming first.
+Title Sorting:
+
+If the selected sorting criteria is 'title', the function uses a.title.localeCompare(b.title). This sorts the tickets based on their titles in alphabetical order.
+The localeCompare method performs a case-sensitive string comparison. It returns a negative value if a comes before b, a positive value if b comes before a, and 0 if they are equal.
+To make the comparison case-insensitive, toLowerCase() is applied to both titles before using localeCompare.*/
